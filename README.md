@@ -13,7 +13,8 @@ Cada nó de L terá os seguintes campos: VALOR (cada número distinto existente 
 main 9 - Desenvolver uma função que, dado um vetor com quant números inteiros, crie uma lista encadeada L, do tipo TLista, contendo os números do vetor ordenados
 CRESCENTEMENTE e SEM repetição.<br>
 Nota: os elementos do vetor devem ser transferidos diretamente para a lista; ou seja, nenhuma estrutura auxiliar deve ser utilizada, assim como os elementos originais do vetor devem ser preservados.<br>
-main 10 - Implementar uma função que, dada uma lista encadeada L, do tipo TLista, determine se todos os seus elementos são distintos.<br><br>
+main 10 - Implementar uma função que, dada uma lista encadeada L, do tipo TLista, determine se todos os seus elementos são distintos.<br>
+main 11 - Fazer uma função que, dados uma lista encadeada L, do tipo TLista, cujos elementos estão ordenados CRESCENTEMENTE, e um número n, remova todas as ocorrências de n em L.<br><br>
 --------- Pilhas e Filas ------------ <br>
 main 4 - Pilhas e Filas <br>
 main 5 - Pilhas<br>
