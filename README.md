@@ -12,7 +12,8 @@ arquivo com números inteiros, um por linha, crie uma lista encadeada L com a se
 Cada nó de L terá os seguintes campos: VALOR (cada número distinto existente no arquivo), QUANTIDADE (quantas vezes o número armazenado no campo valor encontra-se no arquivo), PROX (endereço do próximo nó da lista).<br>
 main 9 - Desenvolver uma função que, dado um vetor com quant números inteiros, crie uma lista encadeada L, do tipo TLista, contendo os números do vetor ordenados
 CRESCENTEMENTE e SEM repetição.<br>
-Nota: os elementos do vetor devem ser transferidos diretamente para a lista; ou seja, nenhuma estrutura auxiliar deve ser utilizada, assim como os elementos originais do vetor devem ser preservados.<br><br>
+Nota: os elementos do vetor devem ser transferidos diretamente para a lista; ou seja, nenhuma estrutura auxiliar deve ser utilizada, assim como os elementos originais do vetor devem ser preservados.<br>
+main 10 - Implementar uma função que, dada uma lista encadeada L, do tipo TLista, determine se todos os seus elementos são distintos.<br><br>
 --------- Pilhas e Filas ------------ <br>
 main 4 - Pilhas e Filas <br>
 main 5 - Pilhas<br>
