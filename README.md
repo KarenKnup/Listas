@@ -15,7 +15,7 @@ CRESCENTEMENTE e SEM repetição.<br>
 Nota: os elementos do vetor devem ser transferidos diretamente para a lista; ou seja, nenhuma estrutura auxiliar deve ser utilizada, assim como os elementos originais do vetor devem ser preservados.<br>
 main 10 - Implementar uma função que, dada uma lista encadeada L, do tipo TLista, determine se todos os seus elementos são distintos.<br>
 main 11 - Fazer uma função que, dados uma lista encadeada L, do tipo TLista, cujos elementos estão ordenados CRESCENTEMENTE, e um número n, remova todas as ocorrências de n em L.<br>
-main 12 - Lista em prdem CRESCENTE<br><br>
+main 12 - Lista em ordem CRESCENTE e SEM repetição<br><br>
 --------- Pilhas e Filas ------------ <br>
 main 4 - Pilhas e Filas <br>
 main 5 - Pilhas<br>
