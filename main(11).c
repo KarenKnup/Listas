@@ -24,7 +24,7 @@ int inserir (TLista *L, int n){
   //Declaração de variáveis
   TLista aux, aux1, aux2;
   
-  if ((*L == NULL) || ((*L)->valor > n)) {
+  if ((*L == NULL) || ((*L)->valor >= n)) {
     //Inserir o primeiro numero da lista
   	//1º passo: alocar memória para o novo nó	
     TLista aux = (TLista)malloc(sizeof(TNo));
@@ -42,7 +42,7 @@ int inserir (TLista *L, int n){
    aux1 = (*L)->prox;
 
   while (aux1 != NULL) { //while(aux1)
-    if (aux1->valor > n) {
+    if (aux1->valor >= n) {
       //Inserindo um numero na posição atual
       aux2 = (TLista)malloc(sizeof(TNo));
       aux2->valor = n;
