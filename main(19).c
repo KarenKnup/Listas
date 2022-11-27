@@ -83,11 +83,11 @@ int menu (){
 	return opcao;
 }
 
-int busca(TLista L) {
+int busca(TLista L) {//Checa se é crescente
   TLista aux=L, aux2=L->prox;
 
   while (aux2) {
-    if ((aux->valor) > (aux2->valor)){
+    if ((aux->valor) > (aux2->valor)){ // (<=) --> TRUE
       return FALSE;
     } 
     
