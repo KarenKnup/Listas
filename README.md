@@ -18,7 +18,8 @@ main 11 - Fazer uma função que, dados uma lista encadeada L, do tipo TLista, c
 main 12 - Lista em ordem CRESCENTE e SEM repetição<br>
 main 13 - Implementar uma função que, dadas duas listas dinâmicas do tipo TLista, verifique se estas são iguais; isto é, contêm os mesmos elementos, na mesma ordem.<br>
 main 14 - Implementar uma função que, dadas duas listas dinâmicas do tipo TLista, verifique se elas possuem os mesmos elementos, independente da ordem na qual apareçam.<br>
-main 15 - Desenvolver uma função que, dada uma lista L1, crie uma nova lista L2, cópia de L1.
+main 15 - Desenvolver uma função que, dada uma lista L1, crie uma nova lista L2, cópia de L1.<br>
+main 16 - Considerando as implementações de listas encadeadas feitas em aula, apresentar o código das funções de inserção, remoção, alteração, busca e exibição para uma lista cujos elementos estejam ordenados CRESCENTEMENTE, além de PERMITIR repetição de valores.
 <br><br>
 --------- Pilhas e Filas ------------ <br>
 main 4 - Pilhas e Filas <br>
