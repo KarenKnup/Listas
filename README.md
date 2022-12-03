@@ -18,7 +18,8 @@ main 15 - Dada uma lista L1, crie uma nova lista L2, CÓPIA de L1.<br>
 main 16 - Considerando as implementações de listas encadeadas feitas em aula, apresentar o código das funções de inserção, remoção, alteração, busca e exibição para uma lista cujos elementos estejam ordenados CRESCENTEMENTE, além de PERMITIR repetição de valores.<br>
 main 17 - Desenvolver uma função que insira um número inteiro N na i-ésima posição de uma lista encadeada L.<br>
 main 18 - Implementar uma função que crie uma lista encadeada (dinâmica) com os N primeiros termos de uma PA (progressão aritmética) de razão R e primeiro termo igual a A1.<br>
-main 19 - Verifica se os elementos da lista estão ou não em ordem CRESCENTE.
+main 19 - Verifica se os elementos da lista estão ou não em ordem CRESCENTE.<br>
+main 20 - Quantos elementos em comum entre 2 listas.
 <br><br>
 --------- Pilhas e Filas ------------ <br>
 main 4 - Pilhas e Filas <br>
