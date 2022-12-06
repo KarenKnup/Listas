@@ -183,7 +183,7 @@ int main(void) {
           printf("\n\tErro durante a criação da lista!");
           }
         } else {
-        n=qtdeElementosLista(L1)-p;
+        n=qtdeElementosLista(L1)-p; //total(qtdeElementosLista) = n+p
         if (Func(L1,&L2,n,p)==TRUE){
           pos(&L2);
           Inverte(&L2);
