@@ -388,7 +388,8 @@ int remover (TLista *L, int numero){
 int alterar (TLista *L, int velho, int novo){
   TLista aux=(*L), aux2=(*L), aux3;
   
-  while(aux){
+ while(aux){
+  if(buscar(*L,novo)==NULL){
     if(aux->valor == velho){
       if((aux->prox->valor) >= novo){//está na ordem crescente
         aux->valor=novo;//substitui velho pelo novo
@@ -397,8 +398,9 @@ int alterar (TLista *L, int velho, int novo){
           remover(L,velho);
           inserir(L,novo);
           return TRUE;
-      }
-    } 
+        }
+      } 
+    }
 
     aux=aux->prox;
   }
@@ -499,7 +501,7 @@ int main(void) {
 			        
 			        //chamando a função			        
 			        if (alterar(&L, num1, num2)==TRUE){
-			        	printf ("\n\tAlteracap realizada!");
+			        	printf ("\n\tAlteracao realizada!");
 					} else {
 						printf ("\n\tERRO: alteracao nao realizada!");
 					}
