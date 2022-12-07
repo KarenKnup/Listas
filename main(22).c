@@ -195,7 +195,7 @@ int menu (){
 int main(void) {
 //declaração de variáveis
 	TLista L = NULL;
-	int num1, num2, op, quant, resp;
+	int num1, num2, op, quant;
 	
 	do{
 		system ("CLS");		//limpar tela    clrscr();
