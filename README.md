@@ -21,7 +21,7 @@ main 18 - Implementar uma função que crie uma lista encadeada (dinâmica) com 
 main 19 - Verifica se os elementos da lista estão ou não em ordem CRESCENTE.<br>
 main 20 - Quantos elementos em comum entre 2 listas.<br>
 main 21 - Criar sublista com n nós a partir de uma posição p.<br>
-main 22 - Inserir, Remover, Buscar, Remover e Exibir ordenados CRESCENTEMENTE e COM repetição
+main 22 - Inserir, Remover, Buscar, Remover e Exibir ordenados CRESCENTEMENTE e COM / SEM repetição
 <br><br>
 --------- Pilhas e Filas ------------ <br>
 main 4 - Pilhas e Filas <br>
