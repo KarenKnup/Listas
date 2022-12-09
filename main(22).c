@@ -126,7 +126,7 @@ TLista buscar (TLista L, int numero){
 
 int alterar (TLista *L, int velho, int novo){
   int cont=0, n;//quantas alterações 
-  TLista aux=(*L), aux2=(*L), aux3;
+  TLista aux=(*L);
   
   while(aux){
     if(aux->valor == velho){
@@ -386,7 +386,7 @@ int remover (TLista *L, int numero){
 
 
 int alterar (TLista *L, int velho, int novo){
-  TLista aux=(*L), aux2=(*L), aux3;
+  TLista aux=(*L);
   
  while(aux){
   if(buscar(*L,novo)==NULL){
