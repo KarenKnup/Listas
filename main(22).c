@@ -83,7 +83,7 @@ int remover (TLista *L, int numero){
 		//percorrendo a lista com 'aux1'
 		while (aux1){
 			//verificando se o 'aux1' está apontando para 'numero'
-			if (aux1->valor <= numero){
+			if (aux1->valor == numero){
 				//removendo o valor apontado por 'aux1'
 				aux2->prox = aux1->prox;
 				
@@ -129,17 +129,13 @@ int alterar (TLista *L, int velho, int novo){
   TLista aux=(*L);
   
   while(aux){
-    if(aux->valor == velho){
-      if((aux->prox->valor) >= novo){//está na ordem crescente
-        aux->valor=novo;//substitui velho pelo novo
-        cont++;
-      } else {//não está na ordem        
-       cont=remover(L,velho);
+    if(aux->valor == velho){      
+        cont=remover(L,velho);
         n=cont;
         while(n){
           inserir(L,novo);
           n--;
-        }
+       
       }
     } 
 
@@ -361,51 +357,78 @@ int inserir (TLista *L, int n){
 }
 
 int remover (TLista *L, int numero){
-	TLista aux1 = (*L)->prox;
-  TLista aux2 = *L;
-
-  if ((*L)->valor == numero) {
-    (*L) = (*L)->prox;
-    free(aux2);
-    return TRUE;
-  }
-
-  while (aux1) {
-    if (aux1->valor == numero) {
-       aux2->prox = aux1->prox;
-       free(aux1);
-       aux1 = aux2->prox;
-      return TRUE;
-    }
-
-    aux1 = aux1->prox;
-    aux2 = aux2->prox;
-  }
-  return FALSE;
+//declaração de variáveis
+	TLista aux1, aux2;
+	int cont = 0; //quantidade de remoções feitas
+	
+	//verificando se o primeiro elemento da lista é o número que deseja-se remover
+	while ((*L) && ((*L)->valor == numero))	{
+		//fazendo o aux1 apontar para o primeiro elemento da lista
+		aux1 = *L;
+		
+		//fazer o L apontar para o "segundo" elemento da lista
+		*L = aux1->prox;     //*L = (*L)->prox;
+		
+		//liberando a memória do nó apontado por 'aux1'
+		free (aux1);
+		
+		//atualizando o número de remoções realizadas
+		cont++;
+	}
+	
+	//verificando se ainda há elementos na lista
+	if (*L)	{
+		//colocando os auxiliares 'aux2' e 'aux1' no primeiro e segundo nós, respectivamente
+		aux2 = *L;
+		aux1 = (*L)->prox;	
+		
+		//percorrendo a lista com 'aux1'
+		while (aux1){
+			//verificando se o 'aux1' está apontando para 'numero'
+			if (aux1->valor == numero){
+				//removendo o valor apontado por 'aux1'
+				aux2->prox = aux1->prox;
+				
+				//removendo o nó que guarda o 'numero'
+				free (aux1);
+				cont++;
+				
+				//fazendo 'aux1' apontar para o próximo elemento da lista
+				aux1 = aux2->prox;				
+			} else {
+				//andando com os dois auxiliares
+				aux2 = aux1;
+				aux1 = aux1->prox;
+			}
+		}
+	}
+	
+	//retornando a quantidade de remoções realizadas
+	return cont;
 }
 
 
 int alterar (TLista *L, int velho, int novo){
+  int x,y;//quantas alterações 
   TLista aux=(*L);
+
+  if(buscar(*L,novo)!=NULL){
+    return FALSE;
+  }
   
- while(aux){
-  if(buscar(*L,novo)==NULL){
-    if(aux->valor == velho){
-      if((aux->prox->valor) >= novo){//está na ordem crescente
-        aux->valor=novo;//substitui velho pelo novo
-        return TRUE;
-      } else {//não está na ordem        
-          remover(L,velho);
-          inserir(L,novo);
-          return TRUE;
-        }
-      } 
-    }
+  while(aux){
+    if(aux->valor == velho){     
+        x=remover(L,velho);
+        y=inserir(L,novo);      
+      if(x==FALSE || y==FALSE){
+        return FALSE;
+      }      
+    } 
 
     aux=aux->prox;
   }
 
-  return FALSE;
+  return TRUE;
 }
 
 void exibir (TLista L){
