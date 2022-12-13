@@ -1,4 +1,7 @@
+
 /*
+   KAREN DA MOTA KNUP - FPR - MANHÃ
+
 Desenvolver uma função que, dadas duas listas
 encadeadas L1 e L2, do tipo TLista, determine a
 quantidade de elementos que elas têm em comum (de
@@ -101,17 +104,30 @@ void exibir (TLista L){
 	}
 }
 
+int Repeticoes (TLista L){//procura repetições em L
+  int cont=0;
+  
+  while(L != NULL){//while(L)
+    if (buscar(L->prox,L->valor)==TRUE){//L vai diminuindo desde o começo
+      cont++;
+    }
+     
+    //atualizando L
+    L = L->prox;
+  }
+
+  return cont;
+}
+
 int Verifica (TLista L, TLista U){//todos distintos
-  TLista aux=U;
   int cont=0;
 
   //percorrendo a lista até o seu final
   while(L != NULL){//while(L)
-    if (buscar(L,aux->valor)==TRUE){
+    if (buscar(U,L->valor)==TRUE){//procura cada elemento de L em U
       cont++;
     }
-      //atualizando o 'aux' para apontar para o próximo nó
-  		aux = aux->prox;
+     
     //atualizando L
     L = L->prox;
   }
@@ -123,18 +139,26 @@ int main (void){
 TLista L=NULL, U=NULL;
 
   inserir(&L,1);
+  inserir(&L,1);
   inserir(&L,2);
+  inserir(&L,2);
+  inserir(&L,2);
+  inserir(&L,4);
+  inserir(&L,6);
   inserir(&L,3);
-  exibir(L);
+   exibir(L);
   printf("\n---------------\n");
   inserir(&U,1);
   inserir(&U,2);
+  inserir(&U,2);
+  inserir(&U,2);
+  inserir(&U,6);
+  inserir(&U,7);
   inserir(&U,6);
   exibir(U);
   printf("\n---------------\n");
-  printf("\n\tAs listas têm %d elementos em comum.",Verifica(L,U));
+  printf("\n\tAs listas têm %d elementos em comum.",Verifica(L,U)-Repeticoes(L));
 
   
 	return 0;
 }
-  
