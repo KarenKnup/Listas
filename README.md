@@ -26,6 +26,8 @@ main 23 - Dadas duas listas L1 e L2, ambas do tipo TLista, desenvolver uma funç
 main 24 - Considerando L1 com elementos em ordem CRESCENTE e COM repetição, crie L2 com os mesmos elementos, na ordem CRESCENTE, mas SEM repetição. <br>
 main 25 - Lista invertida. <br>
 main 26 - Verifica se a lista é uma PG.
+main 27 - Quantos elementos distintos entre 2 listas.<br>
+
 <br><br>
 --------- Pilhas e Filas ------------ <br>
 main 4 - Pilhas e Filas <br>
