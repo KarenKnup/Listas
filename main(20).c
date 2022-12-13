@@ -104,7 +104,7 @@ void exibir (TLista L){
 	}
 }
 
-int Repeticoes (TLista L){//procura repetições em L
+/* int Repeticoes (TLista L){//procura repetições em L
   int cont=0;
   
   while(L != NULL){//while(L)
@@ -117,22 +117,44 @@ int Repeticoes (TLista L){//procura repetições em L
   }
 
   return cont;
-}
+} */
 
 int Verifica (TLista L, TLista U){//todos distintos
-  int cont=0;
+ int flag=0;
+  int existe;
+  int contIguais=0;
+  int contQtdValores=0;
 
-  //percorrendo a lista até o seu final
-  while(L != NULL){//while(L)
-    if (buscar(U,L->valor)==TRUE){//procura cada elemento de L em U
-      cont++;
+  TLista aux1, aux2, aux1VerificaRepetido;
+  aux1=L;
+  aux2=U;
+  
+  //checar em l1 se tem em l2 e se o elemento de l1 já não foi contado na lista
+  
+  if(aux1 && aux2){
+    // algumas das listas esta vazia?
+    while(aux1){
+      flag=0;
+      aux1VerificaRepetido=aux1->prox;
+      existe = aux1 -> valor;
+      
+      while (aux1VerificaRepetido){
+        if(existe == aux1VerificaRepetido -> valor){
+          flag=1;
+        }
+        aux1VerificaRepetido=aux1VerificaRepetido->prox;
+      } 
+      if(flag == 0){
+        if(buscar(U, existe) == TRUE){
+          contIguais++;
+        }
+      }
+      aux1 = aux1 -> prox;
     }
-     
-    //atualizando L
-    L = L->prox;
+  } else{
+    return FALSE;
   }
-
-	return cont;	
+  return contIguais;
 }
 
 int main (void){
