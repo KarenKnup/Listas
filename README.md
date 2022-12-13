@@ -25,7 +25,7 @@ main 22 - Inserir, Remover, Buscar, Remover e Exibir ordenados CRESCENTEMENTE e 
 main 23 - Dadas duas listas L1 e L2, ambas do tipo TLista, desenvolver uma função que determine se L2 é ou não  uma sublista de L1. (ORDEM é importante, TAMANHO não) <br>
 main 24 - Considerando L1 com elementos em ordem CRESCENTE e COM repetição, crie L2 com os mesmos elementos, na ordem CRESCENTE, mas SEM repetição. <br>
 main 25 - Lista invertida. <br>
-main 26 - Verifica se a lista é uma PG.
+main 26 - Verifica se a lista é uma PG. <br>
 main 27 - Quantos elementos distintos entre 2 listas.<br>
 
 <br><br>
