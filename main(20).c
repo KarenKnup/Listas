@@ -179,7 +179,7 @@ TLista L=NULL, U=NULL;
   inserir(&U,6);
   exibir(U);
   printf("\n---------------\n");
-  printf("\n\tAs listas têm %d elementos em comum.",Verifica(L,U)-Repeticoes(L));
+  printf("\n\tAs listas têm %d elementos em comum.",Verifica(L,U));
 
   
 	return 0;
