@@ -2,7 +2,8 @@
 #include <stdlib.h>
 
 /*
-Dada uma lista encadeada L, do tipo TLista, desenvolver uma função que exiba seus elementos na ordem inversa. Ou seja, se o ponteiro L estiver apontando para um nó que contém o valor 10, o 10 será o último a ser exibido pela função.
+Dada uma lista encadeada L, do tipo TLista, desenvolver uma função que exiba seus elementos na ordem inversa. Ou seja, se o ponteiro L estiver apontando para 
+um nó que contém o valor 10, o 10 será o último a ser exibido pela função.
 */
 
 #define TRUE 0
