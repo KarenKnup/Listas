@@ -27,6 +27,7 @@ main 24 - Considerando L1 com elementos em ordem CRESCENTE e COM repetição, cr
 main 25 - Lista invertida. <br>
 main 26 - Verifica se a lista é uma PG. <br>
 main 27 - Quantos elementos distintos entre 2 listas.<br>
+main 28 - Dada uma lista encadeada L, do tipo TLista, desenvolver uma função que exiba seus elementos na ordem inversa. Ou seja, se o ponteiro L estiver apontando para um nó que contém o valor 10, o 10 será o último a ser exibido pela função.<br>
 
 <br><br>
 --------- Pilhas e Filas ------------ <br>
