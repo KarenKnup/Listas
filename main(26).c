@@ -64,10 +64,14 @@ int inserir (TLista *L, int numero){
 int Verifica (TLista L1){
   TLista aux=L1, aux2=L1->prox;
   int q=(aux2->valor)/(aux->valor);
+  float q2;
   
   while(aux2){
-    if(aux2->valor != ((aux->valor)*q)){
-      return FALSE;
+    if(aux2->valor != ((aux->valor)*q)){ 
+      q2=(aux->valor)/(aux2->valor);
+      if(aux2->valor != ((aux->valor)/q2)){ 
+        return FALSE;
+        }
     }
 
     aux2=aux2->prox;
@@ -76,7 +80,6 @@ int Verifica (TLista L1){
   
   return TRUE;
 }
-
 
 int main(void){
   TLista L1=NULL, L2=NULL;
