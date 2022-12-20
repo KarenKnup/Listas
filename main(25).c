@@ -102,3 +102,97 @@ int main(void){
   
 return 0;
   }
+
+//---------------------------------------------------------------------------------------------------------------------
+#include <stdio.h>
+#include <stdlib.h>
+
+#define TRUE 0
+#define FALSE 1
+  
+typedef struct No {
+	int valor;
+	struct No* prox; 
+} TNo;
+
+typedef TNo* TLista; 
+
+int inserir (TLista *L, int numero){
+	TLista aux; 
+
+  
+	aux = (TLista) malloc (sizeof(TNo));
+
+  
+	if (aux == NULL){ 
+		return FALSE;
+	}	else{
+    
+		aux->valor = numero; //aux->valor = *aux.valor
+		
+		aux->prox = *L;
+		
+		*L = aux;
+		
+		return TRUE;
+	}
+}
+
+void exibir (TLista L){
+	//declaração de variáveis
+	TLista aux = L;
+	
+	//testando se a lista está vazia
+	if (!L){ //L==NULL 
+		printf ("\nLista vazia!");
+	}	else	{
+		printf ("\nElementos da lista: ");
+		
+		//percorrendo a lista até o seu final
+		while (aux != NULL)	{
+			//exibindo o valor apontado pelo 'aux'
+			printf ("%d ", aux->valor);
+			
+			//atualizando o 'aux' para apontar para o próximo nó
+			aux = aux->prox;
+		}
+	}
+}
+
+void Inverte (TLista A, TLista *B){
+  TLista aux=A;
+
+  if(aux){
+    Inverte(aux->prox,B);
+    inserir(B,A->valor);
+    aux=NULL;
+  }
+}
+
+void Normal (TLista A, TLista *B){
+  while(A){
+    inserir(B,A->valor);
+    
+    A=A->prox;
+  }
+}
+
+int main(void) {
+  TLista A=NULL, B=NULL;
+
+   printf("\n------------ LISTA A --------------\n");
+    inserir(&A,1);
+    inserir(&A,2);
+    inserir(&A,3);
+    inserir(&A,4);
+    inserir(&A,5);
+    exibir(A);
+
+  printf("\n\n\n------------ LISTA B --------------\n");
+    //Normal(A,&B); //ordem oposta de A
+    Inverte(A,&B); //mesma ordem de A
+    exibir(B);
+
+  
+  return 0;
+}
