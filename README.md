@@ -36,4 +36,5 @@ main 32 - Exercícios - interpretação de 4 funções "destruidoras" de listas
 --------- Pilhas e Filas ------------ <br>
 main 4 - Pilhas e Filas <br>
 main 5 - Pilhas<br>
+main 33 - Inverter uma Pilha <br>
 main 7 - Filas
