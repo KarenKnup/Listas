@@ -71,7 +71,7 @@ void funcao03 (TLista *L){ //enquanto a lista existir (diferente de NULL), cada 
     ->aux=NULL
     ->Não alocou memória para o aux */
   
-    while(*L){
+    while(*L){ //while( (*L)!=NULL )
       aux=*L;
       *L=(*L)->prox;
       free(aux);
