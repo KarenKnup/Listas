@@ -30,7 +30,8 @@ main 27 - Quantos elementos distintos entre 2 listas.<br>
 main 28 - Dada uma lista encadeada L, do tipo TLista, desenvolver uma função que exiba seus elementos na ordem inversa. Ou seja, se o ponteiro L estiver apontando para um nó que contém o valor 10, o 10 será o último a ser exibido pela função.<br>
 main 29 - Fazer uma função que, dada uma lista encadeada L, do tipo TLista, e duas posições p1 e p2, remova todos os elementos de L existentes entre estas posições.<br>
 main 30 - Criar uma lista C que possui todos os elementos de A que NÃO estão em B (não pode alterar a ordem dos elementos)<br>
-main 31 - Lista encadeada com posições nos elementos (COM repetição de elementos)
+main 31 - Lista encadeada com posições nos elementos (COM repetição de elementos) <br>
+main 32 - Exercícios - interpretação de 4 funções "destruidoras" de listas
 <br><br>
 --------- Pilhas e Filas ------------ <br>
 main 4 - Pilhas e Filas <br>
