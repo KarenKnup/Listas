@@ -84,6 +84,31 @@ void Inverte (TLista *L1, TLista aux){
   }
 }
 
+/* VERSÃO APRIMORADA:
+
+void Inverter (TLista *L){//*L - lista que quer inverter
+  TLista Aux=NULL, aux2=*L;
+  int n;
+  
+  while(aux2){
+    n=inserir(&Aux,aux2->valor);
+      if(n==TRUE){
+        aux2=aux2->prox;
+      } else {
+        break;
+      }
+  }
+
+  TLista aux3=*L;
+  while(Aux){
+    aux3->valor = Aux->valor;
+
+    Aux=Aux->prox;
+    aux3=aux3->prox;
+  }
+}
+*/
+
 
 int main(void){
   TLista L1=NULL, aux=NULL;
