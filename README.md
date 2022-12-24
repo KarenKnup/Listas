@@ -33,7 +33,8 @@ main 30 - Criar uma lista C que possui todos os elementos de A que NÃO estão e
 main 31 - Lista encadeada com posições nos elementos (COM repetição de elementos) <br>
 main 32 - Exercícios - interpretação de 4 funções "destruidoras" de listas <br>
 main 35 - Inverte lista até a metade <br>
-main 36 - Compara lista com lista invertida
+main 36 - Compara lista com lista invertida <br>
+main 37 - Compara lista com outra de elementos embaralhados
 <br><br>
 --------- Pilhas e Filas ------------ <br>
 main 4 - Pilhas e Filas <br>
