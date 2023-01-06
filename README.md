@@ -34,7 +34,9 @@ main 31 - Lista encadeada com posições nos elementos (COM repetição de eleme
 main 32 - Exercícios - interpretação de 4 funções "destruidoras" de listas <br>
 main 35 - Inverte lista até a metade <br>
 main 36 - Compara lista com lista invertida <br>
-main 37 - Compara lista com outra de elementos embaralhados
+main 37 - Compara lista com outra de elementos embaralhados <br>
+main 38 - Implementar uma função que tenha como parâmetros uma lista encadeada do tipo TLista e uma posição p (considerando que o primeiro nó da lista está na 
+posição p = 0). A função deverá buscar o menor elemento da posição p ao final da lista.
 <br><br>
 --------- Pilhas e Filas ------------ <br>
 main 4 - Pilhas e Filas <br>
