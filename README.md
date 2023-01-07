@@ -36,7 +36,10 @@ main 35 - Inverte lista até a metade <br>
 main 36 - Compara lista com lista invertida <br>
 main 37 - Compara lista com outra de elementos embaralhados <br>
 main 38 - Implementar uma função que tenha como parâmetros uma lista encadeada do tipo TLista e uma posição p (considerando que o primeiro nó da lista está na 
-posição p = 0). A função deverá buscar o menor elemento da posição p ao final da lista.
+posição p = 0). A função deverá buscar o menor elemento da posição p ao final da lista.<br>
+main 39 - A partir de 2 listas L1 e L2, criar uma L3 com as características:<br>
+--> Elementos de L2 no final de L3, mantendo a mesma ordem<br>
+--> Elementos de L1 no início de L3, na ordem inversa<br>
 <br><br>
 --------- Pilhas e Filas ------------ <br>
 main 4 - Pilhas e Filas <br>
