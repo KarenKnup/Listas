@@ -40,6 +40,7 @@ posição p = 0). A função deverá buscar o menor elemento da posição p ao f
 main 39 - A partir de 2 listas L1 e L2, criar uma L3 com as características:<br>
 --> Elementos de L2 no final de L3, mantendo a mesma ordem<br>
 --> Elementos de L1 no início de L3, na ordem inversa<br>
+main 40 - A partir de um arquivo com um número por linha, gerar uma lista com os números desse arquivo, porém sem repetição. <br>
 <br><br>
 --------- Pilhas e Filas ------------ <br>
 main 4 - Pilhas e Filas <br>
