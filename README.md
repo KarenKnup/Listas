@@ -41,7 +41,8 @@ main 39 - A partir de 2 listas L1 e L2, criar uma L3 com as características:<br
 --> Elementos de L2 no final de L3, mantendo a mesma ordem<br>
 --> Elementos de L1 no início de L3, na ordem inversa<br>
 main 40 - A partir de um arquivo com um número por linha, gerar uma lista com os números desse arquivo, porém sem repetição. <br>
-main 41 - Remover "n" nós de uma lista a partir de uma posição "p"
+main 41 - Remover "n" nós de uma lista a partir de uma posição "p" <br>
+main 42 - Desenvolver uma função que, dada uma lista encadeada L do tipo TLista e dois números inteiros A e B, retorne o número de elementos de L que encontram-se no intervalo [A, B].
 <br><br>
 --------- Pilhas e Filas ------------ <br>
 main 4 - Pilhas e Filas <br>
