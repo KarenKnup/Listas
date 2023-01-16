@@ -99,7 +99,7 @@ int primeiro (TLista F, int *p){
 	}
 }
 
-void Inverte (TLista *L, TLista *U){
+/* void Inverte (TLista *L, TLista *U){ -- ERRADA
   TLista aux1=*L, aux2=*U;
   int temp;
 
@@ -119,6 +119,24 @@ void Inverte (TLista *L, TLista *U){
       aux2=NULL;
       }
   }
+} */
+
+void Inverte (TLista *L, TLista *U){
+  TLista aux_L=NULL, aux_U=NULL;
+
+  //Criando uma cópia da Lista - aux
+  while(*L){
+      enfilar(&aux_L,&aux_U,(*L)->valor);
+      desenfilar(L,U,&(*L)->valor);
+    }
+
+  //*L e *U esvaziados - inserir novamente os valores do aux, porém começando no fim
+  TLista aux1=*L, aux2=*U;
+  
+  while(aux_L){
+    enfilar(L,U,aux_U->valor);
+    desenfilar(&aux_L,&aux_U,&aux_U->valor);
+  }  
 }
 
 int main(void) {
