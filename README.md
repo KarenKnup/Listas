@@ -52,4 +52,6 @@ main 33 - Inverter uma Pilha <br>
 main 7 - Filas <br>
 main 34 - Inverter uma Fila <br>
 main 44 - Remover número de uma Fila <br>
-main 45 - Remover número de uma Pilha
+main 45 - Remover número de uma Pilha <br>
+main 46 - Alterar número de uma Fila <br>
+main 47 - Alterar número de uma Pilha
