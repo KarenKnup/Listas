@@ -4,11 +4,9 @@ remoção de um determinado número inteiro (de todas
 as suas ocorrências) nas seguintes estruturas de dados:
     i. Em uma pilha;
     ii. Em uma fila.
-
 REGRAS DE MANIPULAÇÃO DESSAS ESTRUTURAS:
 - Pilha - só o topo é acessível
 - Fila - Só o início e o fim são acessíveis
-
 Observações: as regras de manipulação destas estruturas 
 (implementação clássica) devem ser respeitadas. Ou seja, 
 apenas o topo é acessível na pilha, assim como os 
@@ -92,38 +90,41 @@ int primeiro (TLista F, int *p){
 	}
 }
 
-void Remove (TLista *L, TLista *U, int n){
-   TLista aux_L=NULL, aux_U=NULL;
+void Remove (TLista *F, TLista *U, TLista Aux_F, TLista Aux_U, int n){
+  //Zerando F e U
+  while(*U){
+    desenfilar(F,U,&(*F)->valor);
+  }
 
-  //Criando uma cópia da Lista - aux
-  while(*L){
-      enfilar(&aux_L,&aux_U,(*L)->valor);
-      desenfilar(L,U,&(*L)->valor);
-    }
-
-  //*L e *U esvaziados - inserir novamente os valores do aux que não forem "n", porém começando no fim
-  TLista aux1=*L, aux2=*U;
-  
-  while(aux_L){
-    if(aux_U->valor != n){
-       enfilar(L,U,aux_U->valor);
-    }
-    desenfilar(&aux_L,&aux_U,&aux_U->valor);
-  }  
+  //Removendo "n" passando por valores do Auxiliar
+ while(Aux_F){
+  if(Aux_F->valor != n){
+    enfilar(F,U,Aux_F->valor);
+  } 
+   desenfilar(&Aux_F,&Aux_U,&Aux_F->valor);
+ }
 }
 
 int main(void) {
-  TLista F=NULL, U=NULL;
+  TLista F=NULL, U=NULL, Aux_F=NULL, Aux_U=NULL;
   int num=2;
 
-  enfilar(&F,&U,5);//F->valor ~~~primeiro
+  enfilar(&Aux_F,&Aux_U,5);//Auxiliar - cópia de F e U ~~ primeiro
+  enfilar(&F,&U,5);
+  enfilar(&Aux_F,&Aux_U,4);
   enfilar(&F,&U,4);
+  enfilar(&Aux_F,&Aux_U,3);
   enfilar(&F,&U,3);
-  enfilar(&F,&U,2);//U->valor ~~~ último
-  printf ("\n\tAntes - Último elemento da fila: %d", U->valor);
+  enfilar(&Aux_F,&Aux_U,2); //último
+  enfilar(&F,&U,2);
+  
+  printf ("\n\tAntes - Primeiro elemento da fila: %d", F->valor);
+  printf ("\n\tDepois - Último elemento da fila: %d ", U->valor);
 
-  Remove(&F,&U,num);
-  printf ("\n\tDepois - Último elemento da fila: %d", U->valor);
+
+  Remove(&F,&U,Aux_F,Aux_U,num);
+  printf ("\n\n\tAntes - Primeiro elemento da fila: %d", F->valor);
+  printf ("\n\tDepois - Último elemento da fila: %d ", U->valor);
   
   
   return 0;
