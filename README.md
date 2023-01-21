@@ -48,8 +48,8 @@ main 43 - Dadas L1 e L2, criar uma L3 com os elementos de L1 e L2 ordenados CRES
 --------- Pilhas e Filas ------------ <br>
 main 4 - Pilhas e Filas <br>
 main 5 - Pilhas<br>
-main 33 - Inverter uma Pilha <br>
 main 7 - Filas <br>
+main 33 - Inverter uma Pilha <br>
 main 34 - Inverter uma Fila <br>
 main 44 - Remover número de uma Fila <br>
 main 45 - Remover número de uma Pilha <br>
