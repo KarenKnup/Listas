@@ -50,8 +50,7 @@ main 42 | Desenvolver uma função que, dada uma lista encadeada L do tipo TList
 main 43 | Dadas L1 e L2, criar uma L3 com os elementos de L1 e L2 ordenados CRESCENTEMENTE e SEM repetição. 
 main 48 | Remover as repetições de elementos em L, de forma que cada valor presente originalmente na lista passe a figurar nela apenas uma vez.
 
-<div align="center">
-<br><h1>Pilhas & Filas</h1><br><br> </div>
+<br><h1></h1>
 
 Pilhas e Filas | Conteúdo
 --------|-----------
