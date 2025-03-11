@@ -1,5 +1,12 @@
 <div align="center">
-<h1>Listas</h1><br><br> </div>
+<h1>Listas</h1>
+
+<h3>Sobre / About</h3>
+
+`Listas são coleções ordenadas que podem aumentar ou diminuir dinamicamente, comumente usadas para armazenar vários itens.`
+
+`Lists are ordered collections that can dynamically grow or shrink, commonly used for storing multiple items.`
+</div>
 
 Arquivo | Conteúdo
 --------|-----------
